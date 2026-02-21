@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Management System</h1>
+        
+        <!-- Form Section -->
+        <div class="form-card">
+            <h2>Add New Student</h2>
+            <form id="studentForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Student Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="input-group">
+                    <select id="course" required>
+                        <option value="" disabled selected>Select Course</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Engineering">Engineering</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Add Student</button>
+            </form>
+        </div>
+
+        <!-- Table Section -->
+        <div class="table-card">
+            <h2>Student List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data yevha yetil -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
